@@ -8,6 +8,7 @@ void main() throws IOException {
     var allStudents = Files.readAllLines(Paths.get("ClassList.txt"));
     //print out the list of students
     for (var student : allStudents) {
-        System.out.println(student);
+        var line = student.split(",");
+        System.out.println(line[0]);
     }
 }

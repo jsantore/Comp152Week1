@@ -1,8 +1,8 @@
-Felipe
-Steven
-Austin
-Jeremias
-Simao
-Tavion
-Eric
-ProfSantore
+Felipe,3436
+Steven,4356
+Austin,3243
+Jeremias,5432
+Simao,2332
+Tavion,3210
+Eric,4334
+ProfSantore,1111
