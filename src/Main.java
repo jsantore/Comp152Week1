@@ -1,19 +1,13 @@
-import java.util.Scanner;
-import java.util.ArrayList;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 
-void main(){
-    var classList = new ArrayList<String>();
-    var reader = new Scanner(System.in);
-    while(true){
-        System.out.println("Enter student name");
-        var studentName = reader.nextLine();
-        if(studentName.equals("")){
-            break;
-        }
-        classList.add(studentName);
-    }
-    for(var name : classList) {
-        System.out.println(name);
+void main() throws IOException {
+
+    var allStudents = Files.readAllLines(Paths.get("ClassList.txt"));
+    //print out the list of students
+    for (var student : allStudents) {
+        System.out.println(student);
     }
 }
